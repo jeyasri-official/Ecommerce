@@ -1,0 +1,40 @@
+.disc_slider {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 15px;
+  border: 1px solid black;
+  background: linear-gradient(to left,rgba(0, 0, 0) 50%, rgba(255, 255, 255) 50%);
+  background-size: 200% 100%;
+  transition: all 1s linear ;
+  outline: none;
+  /* opacity: 0.7; */
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.disc_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background: linear-gradient(to left,black 50%,white) ;
+  cursor: pointer;
+}
+
+.disc_range{
+  width: fit-content;
+  padding: 10px;
+}
+.disc_range div{
+  font-size: 20px;  
+}
+.disc_range .range{
+  margin: 6px 0 0 30px;
+}
+.disc_range div:last-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px
+}

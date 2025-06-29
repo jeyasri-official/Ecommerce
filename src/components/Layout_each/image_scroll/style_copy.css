@@ -1,0 +1,88 @@
+.l_main {
+  overflow: hidden;
+}
+.l_main_container
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  list-style: none;
+}
+.l_main {
+  height: 400px;
+  display: flex;
+}
+.l_main li{
+  width: 450px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.l_main img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.arrows > button {
+  padding: 5px;
+  border-radius: 30%;
+  background-color: transparent;
+  border: none;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 47%;
+  font-size: 20px;
+}
+.arrows > button:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+.arrows > button:active {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.arrows .left-arrow {
+  left: 5%;
+}
+.arrows .right-arrow {
+  right: 5%;
+}
+
+
+.slide_indicator {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0%;
+}
+.slide_indicator ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  height: 100px;
+}
+.slide_indicator ul li,
+.slide_indicator ul li button {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  flex-shrink: 0;
+}
+.slide_indicator ul li button {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
+}
+.slide_indicator ul li button img {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+}
+button.selected{
+    outline: 1px solid black;
+    outline-offset: 2px;
+}

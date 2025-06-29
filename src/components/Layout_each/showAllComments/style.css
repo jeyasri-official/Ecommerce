@@ -1,0 +1,68 @@
+.light {
+  --text-color: rgba(0, 0, 0, 0.8);
+  --title-color: rgb(0, 0, 0);
+  --product-box-shadow: rgba(0, 0, 0, 0.5);
+  --text-product-details:rgba(0,0,0,0.9);
+  --discount-price:rgb(2, 112, 2);
+  --buy-add:#fb8500;
+  --button-hover:#778da9;
+  --table-border:rgba(0,0,0,0.5);
+  --show-all:rgba(0, 0, 0, 0.7);
+}
+.dark {
+  --text-color: rgba(255, 255, 255, 0.75);
+  --title-color: white;
+  --product-box-shadow: rgba(255, 255, 255, 0.5);
+  --text-product-details:rgba(255,255,255,0.9);
+  --discount-price:rgb(135, 255, 135);
+  --buy-add:#ffb703;
+  --button-hover:#1b263b;
+  --table-border:rgba(255,255,255,0.5);
+  --show-all:rgba(255, 255, 255, 0.7);
+}
+.light{
+    --button-close:#003049;
+    --button-close-color:white;
+}
+.dark{
+    --button-close:#fdf0d5;
+    --button-close-color:black;
+}
+.comment_container{
+    min-height: calc(100vh - 80px);
+    margin: 0px 40px ;
+}
+
+.comtitle,.ptitle{
+    color: var(--title-color);
+    margin:10px 0px;
+}
+
+.ptitle{
+    font-size: 3rem;
+}
+.comtitle,.each_comment{
+    padding-left: 5px;
+}
+.each_comment{
+    margin-bottom: 20px;
+    color:var(--text-product-details);
+}
+.each_comment div:last-child{
+    color: var(--text-color)
+}
+.close_comments{
+    background-color: var(--button-close);
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    color: var(--button-close-color);
+}
+
+.sticky_in_comments{
+    position: sticky;
+    top: 80px;
+    padding: 20px 0px 10px;
+    background-color: var(--bg-body);
+}

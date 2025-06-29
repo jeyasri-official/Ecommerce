@@ -1,0 +1,82 @@
+.login-container{
+    width: 800px;
+    height:450px;
+    position: absolute;
+    top:0%;bottom: 0%;left: 0%; right: 0%;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 8px 10px 40px 2px #040152;
+    border-radius: 20px;
+}
+.login-container .left-container,.login-container .right-container{
+    width: 50%;
+}
+.login-container .left-container .new_user{
+    font-size: 20px ;
+    font-weight: 500;
+}
+.login-container .left-container{
+    float: left;
+    position: relative;
+    top: 30px;
+    left: 40px;
+}
+.login-container a{
+    color:rgb(60, 60, 246) ;
+}
+.login-container a:hover{
+    color: blue;
+}
+.login-container .left-container h2{
+    margin: 10px 0px;
+    font-size: 30px;
+}
+.login-container .left-container .input_box{
+    width: 75%;
+    padding: 10px 0px 10px 20px;
+    display: inline-block;
+    margin: 10px 0px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.login-container .left-container input[type='checkbox']{
+    vertical-align: middle;
+    cursor: pointer;
+}
+.login-container .left-container .label1{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.login-container .left-container .label{
+    
+    font-size:20px;
+    font-weight: 450;
+}
+.login-container .left-container button{
+    margin: 30px ;
+    width: 60%;
+    padding: 10px 50px;
+    background-color:rgb(68,68,189) ;
+    color: white;
+    font-size: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.login-container .left-container button:hover{
+    background-color: blue;
+}
+
+.login-container .left-container button:active{
+    background-color: rgb(1, 1, 115);
+}
+
+.login-container .right-container{
+    float: right;
+}
+.login-container .right-container img{
+    width: 100%;
+    position: relative;
+    top: 20px;
+}

@@ -1,0 +1,21 @@
+.light{
+    --star-color:black;
+}
+.dark{
+    --star-color:white;
+}
+.star span{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.star{
+    font-size: 1.5rem;
+}
+.star_color_mode{
+    color:var(--star-color)
+}
+.star[data-star-rating="1"] .checked { color: #ff1612; }
+.star[data-star-rating="2"] .checked { color: #FB8C00; }
+.star[data-star-rating="3"] .checked { color: #cea800; }
+.star[data-star-rating="4"] .checked { color: #3e7004; }
+.star[data-star-rating="5"] .checked { color: #04720a; }

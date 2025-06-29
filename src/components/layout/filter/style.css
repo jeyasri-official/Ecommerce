@@ -1,0 +1,25 @@
+.filter_container{
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.605);
+    border-radius: 30px;
+}
+.filter_container .filter_items{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.filter_container .setfilter{
+    text-align: end;
+    padding-right: 30px;
+}
+.filter_container .setfilter button{
+    margin: 0px 10px;
+    padding: 7px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}

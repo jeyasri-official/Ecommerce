@@ -1,0 +1,192 @@
+.light {
+  --text-color: rgba(0, 0, 0, 0.8);
+  --title-color: rgb(0, 0, 0);
+  --product-box-shadow: rgba(0, 0, 0, 0.5);
+  --text-product-details:rgba(0,0,0,0.9);
+  --discount-price:rgb(2, 112, 2);
+  --buy-add:#fb8500;
+  --button-hover:#778da9;
+  --table-border:rgba(0,0,0,0.5);
+  --show-all:rgba(0, 0, 0, 0.7);
+}
+.dark {
+  --text-color: rgba(255, 255, 255, 0.75);
+  --title-color: white;
+  --product-box-shadow: rgba(255, 255, 255, 0.5);
+  --text-product-details:rgba(255,255,255,0.9);
+  --discount-price:rgb(135, 255, 135);
+  --buy-add:#ffb703;
+  --button-hover:#1b263b;
+  --table-border:rgba(255,255,255,0.5);
+  --show-all:rgba(255, 255, 255, 0.7);
+}
+.product_container_m {
+  margin: 20px 20px 0px;
+  position: relative;
+  color: var(--text-color);
+}
+.product_container {
+  display: flex;
+  align-items: stretch;
+  padding: 0 20px;
+  gap: 20px;
+  position: relative;
+}
+
+.productImage {
+  position: sticky;
+  top: 100px;
+  width: 450px;
+  height: 450px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 20px 3px var(--product-box-shadow);
+}
+.left {
+  flex: 1;
+}
+.right {
+  flex: 2;
+}
+.product_bye_container {
+  height: 100%;
+  margin: 0px 40px;
+}
+.entire_rate,.viewer_rate {
+  color: transparent;
+  background: linear-gradient(to right, var(--star-color) 50%, orange 50%);
+  background-size: 200% 100%;
+  background-clip: text;
+}
+.entire_rate{
+    font-size: 18px;
+}
+.viewer_rate{
+  font-size: 15px;
+}
+.product_rating {
+  margin-bottom: 10px;
+}
+.right {
+  color: var(--text-product-details);
+  position: relative;
+}
+.right .product_title {
+  color: var(--title-color);
+}
+.right hr {
+  margin: 10px 0px;
+}
+.right .product_price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.right .product_price div:first-child{
+    font-size: 3rem;
+}
+.right .product_price div:nth-child(2),.right .product_price div:nth-child(3){
+    font-size: 1.5rem;
+}
+.right .product_price div:nth-child(2){
+    text-decoration: line-through 3px;
+    color: var(--text-color);
+}
+.right .product_price div:nth-child(3){
+    color:var(--discount-price)
+}
+.right .buy {
+    margin: 20px 0;
+    display: flex;
+    gap: 40px;
+}
+.right .buy .buycount{
+    font-size: 20px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right .buy .buycount button{
+    margin: 0px 3px;
+    height:30px;
+    width: 30px;
+    font-size: 25px;
+    background: transparent;
+    border-radius: 5px;
+    color: var(--text-product-details);
+    border: 1px solid var(--title-color);
+}
+.right .buy .buycount button:hover{
+    background-color: var(--button-hover)
+}
+.right .buy .buy_add button{
+    margin: 0px 10px;
+    height :40px;
+    width: 180px;
+    background: var(--buy-add);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.right .buy .buy_add button:active{
+    border: 2px solid var(--buy-add);
+    background: transparent;
+    color:var(--text-product-details)
+}
+
+.product_highlights{
+  width: 100%;
+  margin: 10px 0px;
+  color: var(--text-color);
+}
+.product_highlights tr td{
+  padding: 20px 0px;
+}
+.product_highlights tr td:first-child{
+  width: 30%;
+  vertical-align: center;
+}
+.your_rating,.comment_title{
+  margin: 10px 0;
+}
+.comments{
+  height:150px;
+  overflow:hidden;
+  position: relative;
+}
+
+.comments .show_all_btn{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0%;
+  box-shadow: inset 0px -30px 20px -2px var(--bg-body);
+}
+.comments .show_all_btn button{
+  height: 25px;
+  width: 100px;
+  background:transparent;
+  border:2px solid var(--show-all);
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+  color: var(--text-color);
+}
+.related_products {
+  margin: 30px 20px 0px;
+}
+.related_products .rtitle{
+  color:var(--text-product-details);
+  
+}
+.related_products .rtitle span{
+  text-decoration: underline dashed;
+  text-underline-offset: 5px;
+}
